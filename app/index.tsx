@@ -1,6 +1,7 @@
+import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function Index() {
+export default function Home() {
   return (
     <View
       style={{
@@ -9,7 +10,11 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Home Page</Text>
+      <Link href="/about">About Page</Link>
+      <Link href="/profile">Profile Page</Link>
+      <Link href="/products">Products Page</Link>
+      <Link href="/missing-route">Missing route</Link>
     </View>
   );
 }
